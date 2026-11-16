@@ -3,6 +3,7 @@ import flet as ft
 import paho.mqtt.client as mqtt
 import json
 import asyncio
+import os
 
 BROKER = "broker.emqx.io"
 PORT = 1883
@@ -190,7 +191,9 @@ async def main(page: ft.Page):
     client.connect_async(BROKER, PORT, keepalive=60)
     client.loop_start()
 
-
+if __name__ == "__main__":
+    port = int(os.getenv("PORT", 8000))
+    ft.run(main, view=ft.AppView.WEB_BROWSER, host="0.0.0.0", port=port)
 
 if __name__ == "__main__":
     ft.run(main)
