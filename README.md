@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mqgasweb app
 
 ## Run the app
@@ -67,3 +68,6 @@ flet build web -v
 ```
 
 For more details on building Web app, refer to the [Web Packaging Guide](https://flet.dev/docs/publish/web/).
+=======
+# Mq135CodeWeb
+>>>>>>> 22bd20e8b1bc4221e50a087d22decf1983bbd037
